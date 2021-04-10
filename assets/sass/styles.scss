@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+$backgroundColor: hsl(229, 57%, 11%);
+$cardColor: hsl(228, 56%, 26%);
+$fontColor: hsl(229, 7%, 55%);
+$fontSize: 14px;
+$fontweight: 400;
+$fontweight_bolder: 700;
+$bordertesting: 2px solid red;
+
+%flex-center {
+  display: flex;
+}
+
+body {
+  background-color: $backgroundColor;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font: Roboto;
+}
+
+.container {
+  height: 99vh;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  // background-image: url("../images/bg-desktop.png");
+  background-repeat: no-repeat;
+}
+
+.bg-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg-image {
+  height: 350px;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.Fylo {
+  position: relative;
+  // left: 170px;
+  @extend %flex-center;
+  justify-content: center;
+  height: 10em;
+
+  top: 100px;
+}
+
+.Fylo-card {
+  @extend %flex-center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.leftSideCard {
+  background-color: $cardColor;
+
+  border-radius: 5px;
+  border-top-right-radius: 100px;
+  @extend %flex-center;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin-right: 20px;
+  flex: 1.5;
+}
+
+.upperLeft {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.logo {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.lowerLeft {
+  display: flex;
+  margin-left: 25px;
+}
+
+.squareIcon {
+  // padding: 5px;
+  border-radius: 5px;
+  background-color: $backgroundColor;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+
+.squareIcon img {
+  padding: 7px 0 0 8px;
+  cursor: pointer;
+}
+
+#icon-document {
+  padding-left: 10px;
+}
+
+#icon-folder {
+  padding-top: 10px;
+}
+
+#icon-upload {
+  padding-top: 13px;
+}
+
+.rightSideCard {
+  border-radius: 5px;
+  @extend %flex-center;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.whiteBubble {
+  position: relative;
+  display: flex;
+
+  justify-content: flex-end;
+  width: 100%;
+
+  z-index: 10;
+}
+
+.whiteBubble img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 100px;
+  height: 100px;
+}
+
+.rightContent {
+  background-color: $cardColor;
+  height: 130px;
+  width: 100%;
+  color: $fontColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.range {
+  width: 80%;
+  height: 20px;
+  border-radius: 999px;
+  display: flex;
+
+  background-color: $backgroundColor;
+}
+
+.rangeFilled {
+  background-color: white;
+  border-radius: 999px;
+  display: flex;
+  flex-direction: row;
+
+  width: 60%;
+  height: 19px;
+}
+
+.sliderRange {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insidesliderRange {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+}
