@@ -190,7 +190,7 @@ body {
   font-size: 14px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   body {
     background-color: $backgroundColor;
     margin: 0;
