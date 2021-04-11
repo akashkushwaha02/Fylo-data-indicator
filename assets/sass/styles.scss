@@ -7,9 +7,22 @@ $fontSize: 14px;
 $fontweight: 400;
 $fontweight_bolder: 700;
 $bordertesting: 2px solid red;
+$_10: 10px;
+$hundred: 100%;
 
 %flex-center {
   display: flex;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-column-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 body {
@@ -22,22 +35,21 @@ body {
 
 .container {
   height: 99vh;
-  width: 99%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  width: $hundred -1%;
+  @extend %flex-column-end;
+
   // background-image: url("../images/bg-desktop.png");
   background-repeat: no-repeat;
 }
 
 .bg-image img {
-  width: 100%;
+  width: $hundred;
   object-fit: cover;
 }
 
 .bg-image {
   height: 350px;
-  width: 100%;
+  width: $hundred;
   overflow-y: hidden;
 }
 
@@ -54,7 +66,7 @@ body {
 .Fylo-card {
   @extend %flex-center;
   justify-content: space-between;
-  width: 60%;
+  width: $hundred -40%;
 }
 
 .leftSideCard {
@@ -62,8 +74,8 @@ body {
 
   border-radius: 10px;
   border-top-right-radius: 100px;
-  @extend %flex-center;
-  flex-direction: column;
+  @extend %flex-column;
+
   justify-content: space-around;
 
   margin-right: 20px;
@@ -71,7 +83,7 @@ body {
 }
 
 .upperLeft {
-  display: flex;
+  @extend %flex-center;
   margin-left: 30px;
   margin-top: 20px;
 }
@@ -101,11 +113,11 @@ body {
 }
 
 #icon-document {
-  padding-left: 10px;
+  padding-left: $_10;
 }
 
 #icon-folder {
-  padding-top: 10px;
+  padding-top: $_10;
 }
 
 #icon-upload {
@@ -113,27 +125,25 @@ body {
 }
 
 .rightSideCard {
-  border-radius: 10px;
+  border-radius: $_10;
   @extend %flex-center;
   flex: 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  @extend %flex-column-end;
+
   position: relative;
 }
 
 .whiteBubble {
   position: absolute;
   display: flex;
-
   justify-content: flex-end;
-  width: 100%;
+  width: $hundred;
   top: 0;
   right: 60px;
 }
 
 .whiteBubble img {
-  -webkit-transform: scaleX(-1);
+  // -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   width: 100px;
   height: 100px;
@@ -150,7 +160,7 @@ body {
 .rightContent {
   background-color: $cardColor;
   height: 130px;
-  width: 100%;
+  width: $hundred;
   color: $fontColor;
   display: flex;
   flex-direction: column;
@@ -174,7 +184,7 @@ body {
   display: flex;
   flex-direction: row;
 
-  width: 80%;
+  width: 80%-20%;
   height: 19px;
 }
 
@@ -195,18 +205,14 @@ body {
     background-color: $backgroundColor;
     margin: 0;
     padding: 0;
-    font-family: Roboto;
-    font: Roboto;
   }
 
   .container {
-    height: 100%;
+    height: $hundred;
     width: 99%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
-    background-repeat: no-repeat;
   }
 
   .bg-image img {
@@ -240,7 +246,7 @@ body {
 
     border-radius: 10px;
     border-top-right-radius: 100px;
-    @extend %flex-center;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 
@@ -257,7 +263,6 @@ body {
 
   .logo {
     margin-left: 8px;
-    cursor: pointer;
   }
 
   .lowerLeft {
@@ -296,9 +301,7 @@ body {
     border-radius: 10px;
     @extend %flex-center;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    @extend %flex-column-end;
     position: static;
   }
 
@@ -313,7 +316,6 @@ body {
   }
 
   .whiteBubble img {
-    -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     width: 0;
     height: 0;
@@ -321,7 +323,7 @@ body {
 
   .bubbleTxt {
     position: absolute;
-    color: #848794;
+    color: $fontColor;
     font-weight: 900;
     top: 154px;
     right: 10px;
@@ -333,7 +335,7 @@ body {
   .rightContent {
     background-color: $cardColor;
     height: 130px;
-    width: 100%;
+    width: $hundred;
     color: $fontColor;
     display: flex;
     flex-direction: column;
@@ -379,11 +381,9 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
-    height: 100%;
+    height: $hundred;
     width: 99%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    @extend %flex-column-end;
     background-repeat: no-repeat;
   }
 

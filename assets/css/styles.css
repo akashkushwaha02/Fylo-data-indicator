@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-.rightSideCard, .leftSideCard, .Fylo-card, .Fylo {
+.rightSideCard, .upperLeft, .Fylo-card, .Fylo {
   display: flex;
+}
+
+.leftSideCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSideCard, .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 body {
@@ -13,10 +24,7 @@ body {
 
 .container {
   height: 99vh;
-  width: 99%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  width: 100% -1%;
   background-repeat: no-repeat;
 }
 
@@ -40,21 +48,19 @@ body {
 
 .Fylo-card {
   justify-content: space-between;
-  width: 60%;
+  width: 100% -40%;
 }
 
 .leftSideCard {
   background-color: #1d2c67;
   border-radius: 10px;
   border-top-right-radius: 100px;
-  flex-direction: column;
   justify-content: space-around;
   margin-right: 20px;
   flex: 1.5;
 }
 
 .upperLeft {
-  display: flex;
   margin-left: 30px;
   margin-top: 20px;
 }
@@ -97,9 +103,6 @@ body {
 .rightSideCard {
   border-radius: 10px;
   flex: 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   position: relative;
 }
 
@@ -113,7 +116,6 @@ body {
 }
 
 .whiteBubble img {
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   width: 100px;
   height: 100px;
@@ -152,7 +154,7 @@ body {
   border-radius: 999px;
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 60%;
   height: 19px;
 }
 
@@ -173,8 +175,6 @@ body {
     background-color: #0c122c;
     margin: 0;
     padding: 0;
-    font-family: Roboto;
-    font: Roboto;
   }
 
   .container {
@@ -183,7 +183,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-repeat: no-repeat;
   }
 
   .bg-image img {
@@ -208,6 +207,7 @@ body {
     background-color: #1d2c67;
     border-radius: 10px;
     border-top-right-radius: 100px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
@@ -223,7 +223,6 @@ body {
 
   .logo {
     margin-left: 8px;
-    cursor: pointer;
   }
 
   .lowerLeft {
@@ -260,9 +259,6 @@ body {
   .rightSideCard {
     border-radius: 10px;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     position: static;
   }
 
@@ -276,7 +272,6 @@ body {
   }
 
   .whiteBubble img {
-    -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     width: 0;
     height: 0;
@@ -338,9 +333,6 @@ body {
   .container {
     height: 100%;
     width: 99%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     background-repeat: no-repeat;
   }
 
