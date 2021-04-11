@@ -1,7 +1,7 @@
 Fylo data component
 
 (./design/Wireframe-fylo.png)
-Desktop View
+Wireframe of Desktop View
 
 (./design/desktop-view.jpg)
 Desktop View (Laptop 1280px width)
