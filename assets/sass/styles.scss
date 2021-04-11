@@ -64,9 +64,9 @@ body {
 }
 
 .Fylo-card {
-  @extend %flex-center;
+  display: flex;
   justify-content: space-between;
-  width: $hundred -40%;
+  width: 80%;
 }
 
 .leftSideCard {
@@ -226,14 +226,14 @@ body {
   .Fylo {
     position: relative;
     // left: 170px;
-    @extend %flex-center;
+    display: flex;
     justify-content: center;
 
     top: 100px;
   }
 
   .Fylo-card {
-    @extend %flex-center;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 

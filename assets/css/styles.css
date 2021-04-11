@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-.rightSideCard, .upperLeft, .Fylo-card, .Fylo {
+.rightSideCard, .upperLeft, .Fylo {
   display: flex;
 }
 
@@ -47,8 +47,9 @@ body {
 }
 
 .Fylo-card {
+  display: flex;
   justify-content: space-between;
-  width: 100% -40%;
+  width: 80%;
 }
 
 .leftSideCard {
@@ -192,11 +193,13 @@ body {
 
   .Fylo {
     position: relative;
+    display: flex;
     justify-content: center;
     top: 100px;
   }
 
   .Fylo-card {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
