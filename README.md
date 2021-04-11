@@ -1,9 +1,9 @@
 Fylo data component
 
-(./design/desktop-view.PNG)
+(./design/desktop-view.jpg)
 Desktop View (Laptop 1280px width)
 
-(./design/mobile-view.PNG)
+(./design/mobile-view.jpg)
 
 Mobile View (max width 479px)
 
