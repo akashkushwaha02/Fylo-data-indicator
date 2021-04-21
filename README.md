@@ -2,12 +2,12 @@ Fylo data component
 
 ## Welcome! 👋
 
-(./design/Wireframe-fylo.png)
+![alt wireframe](https://github.com/akashkushwaha02/Fylo-data-indicator/blob/main/design/Wireframe-fylo.png)
 Wireframe of Desktop View
 
-(./design/desktop-view.jpg)
+![alt desktop](https://github.com/akashkushwaha02/Fylo-data-indicator/blob/main/design/desktop-view.jpg)
 Desktop View (Laptop 1280px width)
 
-(./design/mobile-view.jpg)
+![alt mobile](https://github.com/akashkushwaha02/Fylo-data-indicator/blob/main/design/mobile-view.jpg)
 
 Mobile View (max width 479px)
